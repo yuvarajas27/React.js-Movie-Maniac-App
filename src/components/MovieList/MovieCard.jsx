@@ -7,13 +7,15 @@ import Star from "../../assets/star.png";
 
 const MovieCard = ({id,poster_image,title,release_date,rating,description}) => {
     return (
+        
         <NavLink to={`/singlecard/${id}`} 
-            //href={`https://www.themoviedb.org/movie/${id}`}
-            //target='_blank' 
+            href={`https://www.themoviedb.org/movie/${id}`}
+            target='_blank' 
             
             className='movie_card'>
             <img
-                src={`https://image.tmdb.org/t/p/w500${poster_image}`}
+            
+                src={`https://image.tmdb.org/t/p/w500${poster_image}`} 
                 alt='movie poster'
                 className='movie_poster'
             />
@@ -39,6 +41,7 @@ const MovieCard = ({id,poster_image,title,release_date,rating,description}) => {
 
             </div>
         </NavLink>
+        
     );
 };
 
