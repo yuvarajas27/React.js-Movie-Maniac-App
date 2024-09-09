@@ -78,8 +78,10 @@ const MovieList = ({type,title,emoji}) => {
     }
 
     const handleChange=(e)=>{
-        console.log(e.target)
+        console.log(e)
         const {name,value}=e.target 
+        console.log(name,value)
+        console.log(sort)
         setSort(prev=>{
             return {
                 ...prev,

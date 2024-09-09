@@ -8,9 +8,10 @@ import Star from "../../assets/star.png";
 const MovieCard = ({id,poster_image,title,release_date,rating,description}) => {
     return (
         
-        <NavLink to={`/singlecard/${id}`} 
+        // <NavLink to={`/singlecard/${id}`} 
+        <NavLink to={`https://www.themoviedb.org/movie/${id}`}
             href={`https://www.themoviedb.org/movie/${id}`}
-            target='_blank' 
+            target='_self' 
             
             className='movie_card'>
             <img
